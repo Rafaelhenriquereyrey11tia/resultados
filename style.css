@@ -10,7 +10,12 @@ font-size: 62.5%;
 --media-bg:  linear-gradient(180deg, #4D21C9 0%, rgba(37,33,201 ,0.00) 100%, rgba(37,33,201 ,0.00) 100%,);
 --white:#fff;
 --light-blue: #CAC9FF;
-
+--dark-navy:#303b59;
+--resumo-div-bg: linear-gradient(0deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 100%);
+--reacao-bg:#ff5555;
+--menoria-bg:#ffb21e;
+--verbal-bg:#00bb8f;
+--visual-bg:#1125d6;
 }
     body{
         font-size: 1.6rem;
@@ -20,7 +25,7 @@ padding-block:2.4rem ;
 background: var(--resultado-bg);
 text-align: center;
 color: var(--white);
-border-radius:  0 0 3.2rem 3.2rem;
+border-radius: 0 0 3.2rem 3.2rem;
 }
 .resultado h1 {
 font-size: 1.8rem;
@@ -30,12 +35,13 @@ margin-bottom: 2.5rem;
 .resultado div {
     width: 14rem;
     height: 14rem;
-    background:var(--media-bg);
+    background: var(--media-bg);
     margin-inline: auto ;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 2.4rem;
 
 }
 .resultado div strong:nth-of-type(1){
@@ -56,5 +62,45 @@ margin-bottom: 2.5rem;
     max-width: 26rem;
     margin-inline: auto;
     color: var(--light-blue);
-    border-radius: 32px;
+    }
+    
+    .resumo{
+        padding: 2.4rem 3.2rem;
+
+    }
+    .resumo h2{
+        color: var(--dark-navy);
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+
+
+    }
+    .resumo > div{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.6rem;
+        border-radius: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .resumo > div div{
+display: flex;
+align-items: center;
+gap: 1.2rem;
+
+    }
+.resumo_reacao{
+    background: var(--reacao-bg) var(--resumo-div-bg);
+    color: var(--reacao-bg);
+}
+.resumo_memoria {
+    background: var(--menoria-bg) var(--resumo-div-bg);
+    color: var(--menoria-bg);
+}
+.resumo_verbal{
+    background: var(--verbal-bg) var(--resumo-div-bg);
+    color: var(--verbal-bg);
+}
+.resumo_visual{
+    background: var(--visual-bg) var(--resumo-div-bg);
+    color:var(--visual-bg);
 }
